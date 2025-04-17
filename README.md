@@ -12,10 +12,14 @@ Configure your LeonardoXC ./site/config_custom.php
 
 Example Configuration:
 
-// validate against the G-record 
+// validate against the G-record
+
 $CONF_use_validation=1;
+
 $CONF_use_custom_validation=0;
+
 $CONF['validation']['user_internal_server']=0;
+
 $CONF['validation']['server_url']="http://[yourserver.domain]/vali/leonardoVali.php";
 
 Example calls for testing:
