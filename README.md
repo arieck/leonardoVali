@@ -22,15 +22,21 @@ $CONF['validation']['user_internal_server']=0;
 
 $CONF['validation']['server_url']="http://[yourserver.domain]/vali/leonardoVali.php";
 
+
+
 Example calls for testing:
+
 OK: http://[yourserver.domain]/vali/leonardoVali.php?file=http://[yourserver.domain]/vali/sample1.igc
+
 FAIL: http://[yourserver.domain]/vali/leonardoVali.php?file=http://[yourserver.domain]/vali/sample2.igc
 
+
+
 Example using curl command:
+
 /usr/bin/curl -s http://[yourserver.domain]/vali/leonardoVali.php?file=http://[yourserver.domain]rg/vali/sample1.igc
 
-The soure code for this wrapper can be downloaded here.
-
+ 
 Setup:
 You need to create a directory /vali at your webserver document root
 and then a /vali/cache directory
